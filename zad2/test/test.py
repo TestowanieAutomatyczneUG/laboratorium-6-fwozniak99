@@ -1,5 +1,5 @@
 import unittest
-from zad2.src import Password
+from zad2.src.validpassword import Password
 
 class ValidTest(unittest.TestCase):
     def setUp(self):

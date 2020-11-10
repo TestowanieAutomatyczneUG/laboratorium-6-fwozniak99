@@ -1,3 +1,8 @@
-class Password:
+class Password():
     def ValidPassword(self, password):
-        return 0
+        if len(password) < 10:
+            return False
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
