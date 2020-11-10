@@ -1,4 +1,5 @@
 from string import ascii_letters, digits
+import string
 
 class Password():
     def ValidPassword(self, password):
@@ -9,6 +10,7 @@ class Password():
                 return True
             else:
                 return False
+
 
 
 if __name__ == "__main__":
