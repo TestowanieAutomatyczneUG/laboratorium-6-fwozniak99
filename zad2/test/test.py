@@ -11,5 +11,8 @@ class ValidTest(unittest.TestCase):
     def test_correct_password(self):
         self.assertEqual(self.temp.ValidPassword("Password9$"), True)
 
+    def test_no_special(self):
+        self.assertEqual(self.temp.ValidPassword("Password99"), False)
+
     def tearDown(self):
         self.temp = None
