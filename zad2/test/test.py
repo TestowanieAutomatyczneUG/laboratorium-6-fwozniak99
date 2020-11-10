@@ -8,5 +8,8 @@ class ValidTest(unittest.TestCase):
     def test_is_long_enough(self):
         self.assertEqual(self.temp.ValidPassword("abc"), False)
 
+    def test_correct_password(self):
+        self.assertEqual(self.temp.ValidPassword("Password9$"), True)
+
     def tearDown(self):
         self.temp = None
