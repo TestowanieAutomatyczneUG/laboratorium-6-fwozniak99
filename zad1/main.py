@@ -25,6 +25,11 @@ class FizzBuzz:
       File "C:/Users/filip/OneDrive/Pulpit/GITTEST/laboratorium-6-fwozniak99/zad1/main.py", line 17, in game
         raise TypeError("Must be an int")
     TypeError: Must be an int
+    >>> c.game()
+    Traceback (most recent call last):
+      File "C:/Users/filip/OneDrive/Pulpit/GITTEST/laboratorium-6-fwozniak99/zad1/main.py", line 47, in <module>
+        c.game()
+    TypeError: game() missing 1 required positional argument: 'num'
     """
     def game( self, num):
         if type(num) != int:
@@ -43,3 +48,5 @@ class FizzBuzz:
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
+    c = FizzBuzz()
+    c.game()
