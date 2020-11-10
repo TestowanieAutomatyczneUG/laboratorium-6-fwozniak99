@@ -3,7 +3,7 @@ import json
 Invoice = json.loads(open('Invoice.json', "r").read())
 Plays = json.loads(open('Plays.json', "r").read())
 Invoice2 = json.loads(open('Invoice2.json', "r").read())
-Plays2 = json.loads(open('Plays2.json', 'r').read())
+Plays2 = json.loads(open('Plays2.json', "r").read())
 blank = {}
 
 def statement(invoice, plays):
