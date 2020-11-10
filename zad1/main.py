@@ -48,5 +48,3 @@ class FizzBuzz:
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-    c = FizzBuzz()
-    c.game()
