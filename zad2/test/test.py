@@ -23,5 +23,9 @@ class ValidTest(unittest.TestCase):
     def test_at_least_1_upper(self):
         self.assertEqual(self.temp.ValidPassword("password9$"), False)
 
+    def test_exception(self):
+        with self.assertRaises(TypeError):
+            self.temp.ValidPassword(99)
+
     def tearDown(self):
         self.temp = None

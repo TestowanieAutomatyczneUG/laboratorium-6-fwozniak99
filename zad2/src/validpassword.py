@@ -6,6 +6,8 @@ class Password():
     def ValidPassword(self, password):
         lettersNum = 0
         upperLettersNum = 0
+        if type(password) != str:
+            raise TypeError("Must be a string")
         if len(password) < 10:
             return False
         else:
