@@ -20,5 +20,8 @@ class ValidTest(unittest.TestCase):
     def test_at_least_8_letters(self):
         self.assertEqual(self.temp.ValidPassword("Passw667&&"), False)
 
+    def test_at_least_1_upper(self):
+        self.assertEqual(self.temp.ValidPassword("Password9$"), False)
+
     def tearDown(self):
         self.temp = None
